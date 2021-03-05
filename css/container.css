@@ -1,0 +1,56 @@
+.container{
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: repeat(6, 200px);
+    background-color: #C8CDD2;
+    gap: 10px;
+}
+.header {
+    grid-area: hd;
+    line-height: 1rem;
+    text-align: center;
+    color: #014052;
+    background-color: #B2CEE0;
+}
+.last_posts{
+    grid-area: lp;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(17,22,26,0.16), 0 0 4px 0 rgba(17,22,26,0.08), 0 4px 8px 0 rgba(17,22,26,0.04);
+    text-align: justify;
+    font-size: 0.875rem;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: auto;
+    padding: 1.0rem 1.0rem 1.0rem 1.0rem;
+}
+.card{
+    grid-area: cd;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(17,22,26,0.16), 0 0 4px 0 rgba(17,22,26,0.08), 0 4px 8px 0 rgba(17,22,26,0.04);
+    padding-bottom: 1.0rem;
+}  
+.title {
+    color: grey;
+    font-size: 16px;
+}
+.old_posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: op;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(17,22,26,0.16), 0 0 4px 0 rgba(17,22,26,0.08), 0 4px 8px 0 rgba(17,22,26,0.04);
+}
+.footer{
+    grid-area: ft;
+    height: 40px;
+    padding-left: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #014052;
+    background-color: #B2CEE0;
+}
